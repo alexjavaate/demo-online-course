@@ -1,2 +1,16 @@
 i will do it.
 i will do it so many times as it needed.
+
+public Connection getConnection() {
+        return connection;
+    }
+
+    public DAOAbstractSQL() {
+        try {
+            this.connection = DriverManager.getConnection(getDBURL(),getDBLogin(),getDBPassword());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+	=========================================
