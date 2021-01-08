@@ -54,3 +54,16 @@ public class DepartmentDataBaseDao extends DAOAbstractSQL implements DAODepartme
         }
         return preparedStatement;
     }
+	---------------------------------------------------
+	
+	public void closePreparedStatement(PreparedStatement preparedStatement){
+        if (preparedStatement!=null){
+            try {
+                preparedStatement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }finally {
+               closeConnection();
+            }
+        }
+    }
