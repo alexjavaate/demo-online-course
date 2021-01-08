@@ -43,3 +43,14 @@ public class DepartmentDataBaseDao extends DAOAbstractSQL implements DAODepartme
     public List<Employee> getListEmployee() {
         return null;
     }
+	
+	----------------------------------------------------
+	 public PreparedStatement getPreparedStatement(String sqlRequest){
+        PreparedStatement preparedStatement=null;
+        try {
+            preparedStatement = connection.prepareStatement(sqlRequest);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return preparedStatement;
+    }
