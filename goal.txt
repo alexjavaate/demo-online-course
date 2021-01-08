@@ -24,3 +24,22 @@ public class DepartmentDataBaseDao extends DAOAbstractSQL implements DAODepartme
     public boolean addEntity(Department entity) {
         return false;
     }
+	    public boolean deleteEntity(Integer id) {
+        return false;
+    }
+
+    public Department getEntityById(Integer id) {
+        return null;
+    }
+
+    public List<Department> getAll() {
+        return null;
+    }
+
+    public Department update(Department entity) {
+        return null;
+    }
+
+    public List<Employee> getListEmployee() {
+        return null;
+    }
