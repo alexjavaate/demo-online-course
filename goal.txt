@@ -17,3 +17,10 @@ public Connection getConnection() {
     }
 ----------------------------------------------------------
 
+public class DepartmentDataBaseDao extends DAOAbstractSQL implements DAODepartmentInterface {
+    public DepartmentDataBaseDao() {
+    }
+
+    public boolean addEntity(Department entity) {
+        return false;
+    }
